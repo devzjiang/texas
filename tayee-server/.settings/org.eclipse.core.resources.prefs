@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/res=UTF-8
+encoding//src/main/res/conf/game/gameZone.properties=UTF-8
+encoding//src/main/res/conf/player/playerAttribute.properties=UTF-8
+encoding//src/main/res/conf/player/playerBuffer.properties=UTF-8
+encoding//src/main/res/conf/player/playerModule.properties=UTF-8
+encoding//src/main/res/conf/player/playerPosition.properties=UTF-8
+encoding//src/main/res/conf/player/playerSetting.properties=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8

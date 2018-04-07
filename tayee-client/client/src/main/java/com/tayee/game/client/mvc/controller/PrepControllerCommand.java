@@ -1,0 +1,16 @@
+package com.tayee.game.client.mvc.controller;
+import org.puremvc.java.multicore.interfaces.ICommand;
+import org.puremvc.java.multicore.interfaces.INotification;
+import org.puremvc.java.multicore.patterns.command.SimpleCommand;
+
+import com.tayee.game.client.mvc.NotiName;
+import com.tayee.game.client.mvc.controller.command.LoginCommand;
+
+
+public class PrepControllerCommand extends SimpleCommand implements ICommand{
+	
+    public void execute(INotification noti){
+    	System.out.println("PrepComtrollerCommand.excute()");
+        getFacade().registerCommand(NotiName.NOTI_LOGIN,new LoginCommand());
+    }
+}

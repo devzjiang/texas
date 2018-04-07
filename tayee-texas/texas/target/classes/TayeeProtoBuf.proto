@@ -1,0 +1,44 @@
+package com.tayee.game.texas;  
+   
+option java_outer_classname ="GameProtoBuf";  
+
+message MsgRequest {           
+	required string token = 1; 
+	required int32 mk = 2; 
+	required int32 cmd = 3;  
+	required string param = 4;
+} 
+
+message MsgResponse {
+	required int32 code = 1;
+	required string data = 2;
+}
+
+
+enum MsgCode{
+	CODE_OK = 200;
+	CODE_ERR = 500;
+}  
+
+enum MsgMk{
+	MK_PLAYER = 10000;
+	MK_MATCH = 20000;
+}
+
+enum MsgCmd {
+	
+	CMD_BUILD_PLAYER = 10001;
+	CMD_ENTER_GAME = 10002;
+	CMD_SAVE_DATA = 10003;
+	CMD_LOAD_RANK = 10004;
+	CMD_HEART_BEAT = 19998;
+	CMD_EXIT_GAME = 19999;
+
+
+	CMD_RANDOM_MATCH = 20001;
+	CMD_ENTER_MATCH = 20002;
+	CMD_BUILD_MATCH = 20003;
+	CMD_ACTION_MATCH = 20004;
+	CMD_ACTION_PLAYER = 20005;
+
+}
